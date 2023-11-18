@@ -3,7 +3,7 @@ pragma solidity 0.8.19;
 
 import { SchemaResolver } from "../eas-contracts/resolver/SchemaResolver.sol";
 import { IEAS, Attestation } from "../eas-contracts/IEAS.sol";
-
+import '@openzeppelin-contracts-upgradeable/contracts/access/AccessControlUpgradeable.sol';
 
 contract UmaResolver is SchemaResolver {
         constructor(IEAS eas) SchemaResolver(eas) {}
